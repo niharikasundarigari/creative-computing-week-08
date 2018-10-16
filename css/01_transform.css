@@ -44,4 +44,22 @@ a:hover {
   width: 200px;  
   height: 200px;
   background: red;
+  transition-delay: 1s;
+  transition: all 3s;
+}
+
+.content: hover{
+
+  transform: rotateZ(3645deg) scale(1.5);
+
+}
+
+.content:hover a {
+  color: white;
+}
+
+ .shape: hover {
+  transform: rotateZ(405deg) scale(1.5);
+  background-color: blue;
+  transition-timing-function: 
 }

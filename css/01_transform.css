@@ -49,8 +49,7 @@ a:hover {
 }
 
 .content: hover{
-
-  transform: rotateZ(3645deg) scale(1.5);
+transform: rotateZ(3645deg) scale(1.5);
 
 }
 

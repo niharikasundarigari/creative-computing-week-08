@@ -39,18 +39,19 @@ a {
   margin: 30px;
   width: 200px;  
   height: 200px;
-  background: navy;
+  background: red;
   animation-name: redcircle;
-  animation-duration: 5s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 .shape2 {
   margin: 30px;
   width: 200px;  
   height: 200px;
-  background: red;
+  background: blue;
   animation-name: bluecircle;
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
 }
 
@@ -67,37 +68,48 @@ border-radius: 100px
 
 @keyframes redcircle{
 0% {
-  transform: translateX(50px);
-  
+  transform: translate(100px,100px);
+  transform: translate(30);
 }
 25%{
-  transform: translateY(50px);
+  transform: translateX(200px);
 }
 
 50%{
-  transform: translateX(70px);
+  transform: translate(300px,300px);
 }
 
-100%{
-  transform: translateY(100px);
+75%%{
+  transform: translateY(500px);
+ }
+
+ 100%{
+  transform: translate(700px,700px);
+  transform: scale(40);
  }
 }
 
 @keyframes bluecircle{
   
 0% {
-transform: translateX(50px);
-  }
-
+  transform: translateX(100px);
+  transform: scale(20);
+}
 25%{
-  transform: translateY(50px);
+  transform: translate(200px,200px);
 }
 
 50%{
-  transform: translateX(70px);
+  transform: translateX(300px);
 }
+
+75%{
+  transform: translate(500px,500px);
+}
+
 100%{
-  transform: translateY(100px);
+  transform: translateX(700px);
+  transform: scale(30);
  }
 }
 
